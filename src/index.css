@@ -1,9 +1,9 @@
 :root {
-  --color1: #030AA4;
-  --color2: #07070C;
-  --color3: #E3A410;
-  --color4: #65FA05;
-  --color5: #00EBF0;
+  --color1: #38F2BA;
+  --color2: #38B1F2;
+  --color3: #38ECF2;
+  --color4: #38F27A;
+  --color5: #3876F2;
   --color-blanco: #FFFFFF;
   --color-negro: #000000;
   --color-gris-claro: #CCCCCC;
@@ -195,4 +195,34 @@ h3 {
   100% {
     transform: rotate(360deg);
   }
+}
+#main-header{
+  background-color: var(--color3);
+  color: var(--color-blanco);
+}
+
+#main-header p{
+  margin-bottom: 0;
+}
+#sobre-mi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color1);
+  padding: 20px;
+  border-radius: 15px;
+  color: var(--color-negro);
+}
+
+.imagen {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+#sobre-mi h1, #sobre-mi h2, #sobre-mi h3, #sobre-mi h4 {
+  margin: 10px 0;
 }
