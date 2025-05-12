@@ -2,10 +2,10 @@ import {Unity, useUnityContext} from "react-unity-webgl";
 
 function Game() {
     const { unityProvider, sendMessage } = useUnityContext({
-        loaderUrl: "/Game1/Build.loader.js",
-        dataUrl: "/Game1/Build.data",
-        frameworkUrl: "/Game1/Build.framework.js",
-        codeUrl: "/Game1/Build.wasm",
+        loaderUrl: "/Game/Game.loader.js",
+        dataUrl: "/Game/Game.data",
+        frameworkUrl: "/Game/Game.framework.js",
+        codeUrl: "/Game/Game.wasm",
     });
 
     function handleSceneReset() {
@@ -20,7 +20,7 @@ function Game() {
                     <Unity unityProvider={unityProvider} className="centered-unity" />
 
                     <div className="centered-content">
-                        <button onClick={handleSceneReset}>Spawn Enemies</button>
+                        <button onClick={handleSceneReset}>Reinicar</button>
                     </div>
 
                 </div>
