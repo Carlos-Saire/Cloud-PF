@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import {Link} from "react-router-dom";
 
 function MainNav() {
     return (
@@ -11,13 +11,13 @@ function MainNav() {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/game">Game</Link>
-                            </li>
+                        </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/game2">Game2</Link>
-                            </li>
+                        </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/game3">Game3</Link>
-                            </li>
+                        </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/game4">Game4</Link>
                         </li>
@@ -31,7 +31,7 @@ function MainNav() {
                 </div>
             </div>
         </nav>
-    )
+    );
 }
 
-export default MainNav
+export default MainNav;
