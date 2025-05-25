@@ -1,14 +1,14 @@
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { useEffect } from "react";
 
-const UnityGame = ({ 
-    loaderUrl, 
-    dataUrl, 
-    frameworkUrl, 
-    codeUrl, 
-    className, 
+const UnityGame = ({
+    loaderUrl,
+    dataUrl,
+    frameworkUrl,
+    codeUrl,
+    className,
     onUnityReady,
-    onUnityReception 
+    onUnityReception
 }: {
     loaderUrl: string;
     dataUrl: string;
@@ -29,8 +29,11 @@ const UnityGame = ({
         onUnityReady(sendMessage);
 
         (window as any).ReceiveUnityMessage = (message: string) => {
+            console.log("Mensaje recibido en React:", message);
             onUnityReception(message);
         };
+
+        console.log("Se ha registrado ReceiveUnityMessage en window:", (window as any).ReceiveUnityMessage);
 
         return () => {
             delete (window as any).ReceiveUnityMessage;
