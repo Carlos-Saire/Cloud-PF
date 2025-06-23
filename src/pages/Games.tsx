@@ -40,6 +40,7 @@ class Games extends React.Component<any> {
     protected handleUnityMessage(message: string) {
         console.log("Mensaje recibido desde Unity:", message);
         this.setState({ unityMessage: message });
+        console.log(localStorage.getItem('username'));
     }
     componentWillUnmount() {
         this.DestroyGame();

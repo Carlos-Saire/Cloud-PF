@@ -13,7 +13,7 @@ class Game extends Games {
     }
 
     handleSceneReset() {
-        this.unitySendMessage("ConnectionReact", "QuitGame");
+        console.log(localStorage.getItem('username'));
     }
     
     render() {
